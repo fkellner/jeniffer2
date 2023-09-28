@@ -1,0 +1,6 @@
+*.o
+dmbilinear
+dmzhangwu
+imdiff
+mosaic
+._makefile.gcc
