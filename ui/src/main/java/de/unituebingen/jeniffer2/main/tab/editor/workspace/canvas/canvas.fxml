@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+
+
+<?import javafx.scene.layout.AnchorPane?>
+<AnchorPane xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="de.unituebingen.jeniffer2.main.tab.editor.workspace.canvas.CanvasPresenter">
+    <children>
+        <Pane fx:id="wrapper">
+            <ImageView fx:id="imageView" onMouseDragged="#onMouseDragged" onMousePressed="#onMousePressed"
+                       onScroll="#onScroll" onMouseMoved="#onMouseMoved" onMouseExited="#onMouseExit" preserveRatio="true"/>
+        </Pane>
+    </children>
+</AnchorPane>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.canvas.Canvas?>
+
+<TitledPane animated="false" 
+            styleClass="image-data" 
+            text="%imagedata" 
+            xmlns="http://javafx.com/javafx/11.0.1" 
+            xmlns:fx="http://javafx.com/fxml/1" 
+            fx:controller="de.unituebingen.jeniffer2.main.modules.imagedata.ImageDataPresenter">
+    <content>
+        <VBox>
+            <children>
+                <HBox alignment="TOP_CENTER">
+                    <children>
+                        <ComboBox fx:id="lensSizeChooser"/>
+                        <ComboBox fx:id="lensModeChooser"/>
+                        <ComboBox fx:id="compareModeChooser"/>
+                    </children>
+                </HBox>
+                <HBox fx:id="comparisonConfig">
+                    <children>
+                    </children>
+                </HBox>
+                <HBox>
+                    <children>
+                        <Pane fx:id="pane" HBox.hgrow="ALWAYS" height="${pane.width}">
+                        <children>
+                            <Canvas fx:id="lensCanvas" height="${pane.width}" width="${pane.width}"
+                                    onWidthChange="#redrawLens" onHeightChange="#redrawLens" />
+                        </children>
+                        </Pane>
+                    </children>
+                </HBox>
+                <HBox alignment="TOP_CENTER">
+                    <children>
+                        <Label text="x: " />
+                            <Label text="-" fx:id="xPos" />
+                        <Separator orientation="VERTICAL">
+                            <padding>
+                                <Insets left="8.0" right="8.0" />
+                            </padding>
+                        </Separator>
+                        <Label text="y: " />
+                            <Label fx:id="yPos" text="-" />
+                    </children>
+                </HBox>
+                <HBox>
+                    <children>
+                        <Label fx:id="rValue" styleClass="r-value" text="-" />
+                        <Label fx:id="gValue" styleClass="g-value" text="-" />
+                        <Label fx:id="bValue" styleClass="b-value" text="-" />
+                    </children>
+                </HBox>
+            </children>
+        </VBox>
+    </content>
+</TitledPane>

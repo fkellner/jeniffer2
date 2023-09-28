@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TitledPane?>
+
+<TitledPane animated="false" maxHeight="1.7976931348623157E308" styleClass="metadata" text="%metadata" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.unituebingen.jeniffer2.main.modules.metadata.MetadataPresenter">
+    <content>
+        <TabPane tabClosingPolicy="UNAVAILABLE">
+            <tabs>
+                <Tab text="0thIFD">
+                    <content>
+                        <TableView fx:id="baselineTable">
+                            <columns>
+                                <TableColumn fx:id="baselineTableColumn1" prefWidth="150.0" text="Tag" />
+                                <TableColumn fx:id="baselineTableColumn2" prefWidth="300" text="Value" />
+                            </columns>
+                        </TableView>
+                    </content>
+                </Tab>
+                <Tab text="RAW IFD">
+                    <content>
+                        <TableView fx:id="hrTable">
+                            <columns>
+                                <TableColumn fx:id="hrTableColumn1" prefWidth="150" text="Tag" />
+                                <TableColumn fx:id="hrTableColumn2" prefWidth="300" text="Value" />
+                            </columns>
+                        </TableView>
+                    </content>
+                </Tab>
+                <Tab text="Exif IFD">
+                    <content>
+                        <TableView fx:id="exifTable">
+                            <columns>
+                                <TableColumn fx:id="exifTableColumn1" prefWidth="150" text="Tag" />
+                                <TableColumn fx:id="exifTableColumn2" prefWidth="300" text="Value" />
+                            </columns>
+                        </TableView>
+                    </content>
+                </Tab>
+            </tabs>
+        </TabPane>
+    </content>
+</TitledPane>

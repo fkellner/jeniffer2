@@ -1,0 +1,8 @@
+.workspace-information-bar {
+    -fx-background-color: -background-color-transparent;
+    -fx-padding: 8;
+}
+
+.workspace-information-bar .label {
+    -fx-text-fill: -font-color;
+}

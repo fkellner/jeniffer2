@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<!--Original auskommentiert-->
+<!--<BorderPane fx:id="borderPane" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="main"
+            xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="de.unituebingen.jeniffer2.main.tab.editor.EditorPresenter">-->
+<BorderPane fx:id="borderPane" styleClass="main"
+                xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1"
+                fx:controller="de.unituebingen.jeniffer2.main.tab.editor.EditorPresenter">
+    <center>
+        <SplitPane fx:id="center"/>
+    </center>
+</BorderPane>

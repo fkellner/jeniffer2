@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.TilePane?>
+
+<BorderPane fx:id="workspace" styleClass="workspace-library" xmlns="http://javafx.com/javafx/11.0.1"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="de.unituebingen.jeniffer2.main.tab.library.workspace.WorkspacePresenter">
+    <center>
+        <ScrollPane fitToHeight="true" fitToWidth="true" pannable="true" BorderPane.alignment="CENTER">
+            <content>
+                <TilePane fx:id="tilePane" prefColumns="5" styleClass="tile-pane"/>
+            </content>
+        </ScrollPane>
+    </center>
+</BorderPane>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+
+<TitledPane animated="false" styleClass="module-directories" text="%filenavigation" textOverrun="WORD_ELLIPSIS" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.unituebingen.jeniffer2.main.modules.navigation.NavigationPresenter">
+    <content>
+        <TreeView fx:id="directories" minHeight="50"/>
+    </content>
+</TitledPane>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.SplitPane?>
+
+<!--
+<SplitPane fx:id="content" maxWidth="400.0" minWidth="-Infinity"
+           orientation="VERTICAL" prefWidth="300.0" styleClass="aside, split-pane"
+           xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1"
+           fx:controller="de.unituebingen.jeniffer2.main.tab.library.aside.AsidePresenter">
+</SplitPane>
+-->
+<SplitPane fx:id="content" maxWidth="400.0"
+           orientation="VERTICAL" styleClass="aside, split-pane"
+           xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1"
+           fx:controller="de.unituebingen.jeniffer2.main.tab.library.aside.AsidePresenter">
+</SplitPane>

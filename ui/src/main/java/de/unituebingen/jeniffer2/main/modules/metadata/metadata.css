@@ -1,0 +1,22 @@
+.metadata .table-view,
+.metadata .tree-table-view {
+    /* Constants used throughout the tableview. */
+    /*-fx-table-header-border-color: red;*/
+    /*-fx-table-cell-border-color: blue;*/
+    -fx-border-width: 0;
+    -fx-border-color: -border-color;
+    -fx-background-color: -shadow-color-1, -shadow-color-2, -background-color-1, -background-color-2;
+    -fx-background-insets: 0 0 0 0, 1 1 1 1, 2 2 2 2, 3 3 3 3;
+    -fx-background-radius: 0, 0, 1, 1;
+    -fx-padding: 8;
+}
+
+.metadata .tab-pane > .tab-header-area > .tab-header-background {
+    -fx-border-width: 0;
+}
+
+.metadata .column-header .label {
+    -fx-text-fill: -background-color;
+    -fx-alignment: CENTER_LEFT;
+    -fx-padding: 8;
+}

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<BorderPane xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="de.unituebingen.jeniffer2.main.tab.editor.workspace.WorkspacePresenter" fx:id="workspace"
+            styleClass="workspace" >
+<center>
+    <Pane fx:id="canvas" VBox.vgrow="ALWAYS" HBox.hgrow="ALWAYS"/>
+</center>
+
+</BorderPane>

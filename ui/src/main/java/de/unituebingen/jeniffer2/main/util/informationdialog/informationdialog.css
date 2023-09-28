@@ -1,0 +1,60 @@
+.root {
+    /*-background-color: rgba(38, 38, 37, 1);*/
+    -background-color: rgba(64, 64, 64, 1);
+    -background-color-dark: rgba(43, 43, 43, 1);
+    -background-color-transparent: rgba(64, 64, 64, 0.5);
+    -border-color: -background-color;
+    -fx-background-color: -background-color;
+
+    -shadow-color-1: rgba(58, 58, 58, 1);
+    -shadow-color-2: rgba(33, 33, 33, 1);
+    -background-color-1: derive(-background-color, 15%);
+    -background-color-2: -background-color-dark;
+
+    -font-color: #FFFFFF;
+    -font-color-text: derive(-font-color, -15%);
+    -accent-color: #B4A069;
+
+    -fx-border-width: 1px;
+    -fx-border-color: -shadow-color-1;
+}
+
+.label {
+    -fx-text-fill: -font-color-text;
+}
+
+.label.dialog-title {
+    -fx-padding: 0 0 0.333333em 0;
+}
+
+.dialog-pane {
+    -fx-border-width: 0;
+    -fx-border-color: -border-color;
+    -fx-background-color: -shadow-color-2, -background-color-1, -background-color;
+    -fx-background-insets: 0 0 0 0, 1 1 1 1, 2 2 2 2;
+    -fx-background-radius: 0, 1, 1;
+    -fx-padding: 0;
+}
+
+.dialog-pane > .button-bar > .container {
+    -fx-padding: 0.833em; /* 10px */
+}
+
+.dialog-pane .button {
+    -fx-border-width: 0;
+    -fx-border-color: -border-color;
+    -fx-background-color: -shadow-color-1, -shadow-color-2, -background-color-1, -background-color-2;
+    -fx-background-insets: 0 0 0 0, 1 1 1 1, 2 2 2 2, 3 3 3 3;
+    -fx-background-radius: 0, 0, 1, 1;
+    -fx-padding: 8 16 8 16;
+    -fx-text-fill: -font-color-text;
+}
+
+.dialog-pane .button:hover {
+    -fx-border-width: 0;
+    -fx-border-color: -border-color;
+    -fx-background-color: -shadow-color-1, -shadow-color-2, -background-color-1, -background-color;
+    -fx-background-insets: 0 0 0 0, 1 1 1 1, 2 2 2 2, 3 3 3 3;
+    -fx-background-radius: 0, 0, 1, 1;
+}
+

@@ -1,0 +1,65 @@
+.workspace-toolbar {
+    -fx-border-width: 0;
+    -fx-border-color: -border-color;
+    -fx-background-color: -shadow-color-1, -shadow-color-2, -background-color-1, -background-color-2;
+    -fx-background-insets: 0 0 0 0, 1 1 1 1, 2 2 2 2, 3 3 3 3;
+    -fx-background-radius: 0, 0, 1, 1;
+    -fx-padding: 8;
+}
+
+.workspace-toolbar .button {
+    -fx-background-color: transparent;
+    -fx-padding: 8;
+}
+
+.workspace-toolbar .button:hover {
+    -fx-border-width: 0;
+    -fx-border-color: -border-color;
+    -fx-background-color: -shadow-color-2, -background-color-1, -background-color-2;
+    -fx-background-insets: 0 0 0 0, 1 1 1 1, 2 2 2 2;
+    -fx-background-radius: 0, 1, 1;
+}
+
+.workspace-toolbar .button .glyph-icon {
+    -fx-fill: -font-color;
+    -fx-effect: dropshadow(gaussian, black, 3, 0.5, 0, 0);
+}
+
+.workspace-toolbar .text-field {
+    -fx-background-insets: 0;
+    -fx-border-radius: 1;
+    -fx-padding: 8;
+    -fx-border-width: 0;
+    -fx-border-color: -background-color-1;
+    -fx-background-color: -background-color-dark;
+    -fx-text-fill: -font-color-text;
+}
+.workspace-toolbar .regularbutton {
+    -fx-text-fill: -font-color-text;
+    -fx-max-width: 8em;
+}
+.combo-box > .list-cell {
+    -fx-text-fill: -font-color-text;
+    -fx-border-width: 0;
+    -fx-border-color: -border-color;
+    -fx-background-color: -shadow-color-1, -shadow-color-2, -background-color-1, -background-color-2;
+    -fx-background-insets: 0 0 0 0, 1 0 1 1, 2 0 2 2, 3 0 3 3;
+    -fx-background-radius: 0, 0, 1, 1;
+    
+    -fx-padding: 8;
+}
+.combo-box-base > .arrow-button {
+    -fx-border-width: 0;
+    -fx-border-color: -border-color;
+    -fx-background-color: -shadow-color-1, -shadow-color-2, -background-color-1, -background-color-2;
+    -fx-background-insets: 0 0 0 0, 1 1 1 0, 2 2 2 0, 3 3 3 1;
+    -fx-background-radius: 0, 0, 1, 1;
+    
+    -fx-padding: 8;
+}
+.combo-box {
+    -fx-max-width: 15em;
+}
+.acc {
+    -fx-max-width: 10em;
+}

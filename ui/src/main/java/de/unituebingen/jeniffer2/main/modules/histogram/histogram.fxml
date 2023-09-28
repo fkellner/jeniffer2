@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.AreaChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.TitledPane?>
+
+<TitledPane animated="false" text="%histogram" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.unituebingen.jeniffer2.main.modules.histogram.HistogramPresenter">
+   <content>
+      <AreaChart fx:id="histogram">
+        <xAxis>
+          <NumberAxis side="BOTTOM" upperBound="255.0" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis minorTickLength="0.0" side="LEFT" tickLabelGap="0.0" />
+        </yAxis>
+      </AreaChart>
+   </content>
+</TitledPane>

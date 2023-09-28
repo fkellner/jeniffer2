@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ButtonType?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DialogPane?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.VBox?>
+
+<DialogPane xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="de.unituebingen.jeniffer2.main.tab.library.interpolationdialog.InterpolationDialogPresenter">
+    <buttonTypes>
+        <ButtonType fx:constant="APPLY"/>
+        <ButtonType fx:constant="CANCEL"/>
+    </buttonTypes>
+    <graphic>
+        <ImageView fx:id="imageView" pickOnBounds="true" preserveRatio="true" fitWidth="400"/>
+    </graphic>
+    <content>
+        <VBox>
+            <children>
+                <Label text="%interpolationMethod"/>
+                <ComboBox fx:id="interpolationMethods" maxWidth="1.7976931348623157E308"/>
+            </children>
+            <children>
+                <Label fx:id="subStepsLabel" text="%subStep"/>
+                <ComboBox fx:id="subSteps" maxWidth="1.7976931348623157E308"/>
+            </children>
+            <children>
+                <Label text="%accelerationStrategy"/>
+                <ComboBox fx:id="accelerationStrategies" maxWidth="1.7976931348623157E308"/>
+            </children>
+        </VBox>
+    </content>
+</DialogPane>

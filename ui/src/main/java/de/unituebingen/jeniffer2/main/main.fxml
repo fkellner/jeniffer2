@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.layout.Pane?>
+<BorderPane fx:id="borderPane"
+            prefHeight="360.0" prefWidth="640.0" styleClass="main" xmlns="http://javafx.com/javafx/11.0.1"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.unituebingen.jeniffer2.main.MainPresenter">
+    <center>
+        <TabPane side="LEFT" tabClosingPolicy="UNAVAILABLE" BorderPane.alignment="CENTER" styleClass="tab-pane"
+                 fx:id="tabPane">
+            <tabs>
+                <Tab text="%library" fx:id="libraryTab" styleClass="tab">
+                    <graphic>
+                        <FontAwesomeIconView glyphName="FOLDER" styleClass="tab-icon"/>
+                    </graphic>
+                </Tab>
+                <Tab text="%editor" fx:id="editorTab" styleClass="tab">
+                    <graphic>
+                        <FontAwesomeIconView glyphName="CAMERA" styleClass="tab-icon"/>
+                    </graphic>
+                </Tab>
+            </tabs>
+        </TabPane>
+    </center>
+</BorderPane>

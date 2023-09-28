@@ -1,0 +1,21 @@
+.thumbnail {
+    -fx-padding: 8;
+    -fx-background-color: transparent;
+    -fx-border-radius: 0;
+    -fx-background-radius: 0;
+}
+
+.thumbnail:focused,
+.thumbnail:selected,
+.thumbnail:hover {
+    -fx-border-width: 0;
+    -fx-border-color: -border-color;
+    -fx-background-color: -shadow-color-1, -shadow-color-2, -background-color-1, -background-color;
+    -fx-background-insets: 0 0 0 0, 1 1 1 1, 2 2 2 2, 3 3 3 3;
+    -fx-background-radius: 0, 0, 1, 1;
+}
+
+.thumbnail .label {
+    -fx-padding: 4 0 0 0;
+    -fx-text-fill: -font-color;
+}

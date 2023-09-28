@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<HBox xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1"
+         fx:controller="de.unituebingen.jeniffer2.main.tab.editor.workspace.toolbar.ToolBarPresenter"
+         styleClass="workspace-toolbar">
+    <children>
+        <!--<Pane HBox.hgrow="ALWAYS"/>-->
+        <Button mnemonicParsing="false" fx:id="zoomAdaptButton" onAction="#onZoomAdapt" styleClass="zoom-in-btn">
+            <graphic>
+                <FontAwesomeIconView glyphName="EXPAND" size="1.25em"/>
+            </graphic>
+        </Button>
+        <Button mnemonicParsing="false" fx:id="zoomOutButton" onAction="#onZoomOut">
+            <graphic>
+                <FontAwesomeIconView glyphName="SEARCH_MINUS" size="1.25em"/>
+            </graphic>
+        </Button>
+        <Button mnemonicParsing="false" fx:id="zoomInButton" onAction="#onZoomIn">
+            <graphic>
+                <FontAwesomeIconView glyphName="SEARCH_PLUS" size="1.25em"/>
+            </graphic>
+        </Button>
+        <TextField fx:id="zoomFactorInput" alignment="CENTER"/>
+        <!--<Label text="%accelerationStrategy"/>-->
+        <ComboBox fx:id="accelerationStrategies" styleClass="acc"/>
+        <!--<Label text="%interpolationMethod"/>-->
+        <ComboBox fx:id="interpolationMethods"/>
+        <!--<Label fx:id="subStepsLabel" text="%subStep"/>-->
+        <ComboBox fx:id="subSteps"/>
+        <Button fx:id="computeButton" onAction="#updateImage" styleClass="regularbutton">Compute</Button>
+        <Button fx:id="computingButton" styleClass="regularbutton">Processing...</Button>
+    </children>
+</HBox>

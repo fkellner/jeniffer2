@@ -1,0 +1,34 @@
+.image-data .r-value {
+    -fx-text-fill: #FF0000;
+}
+
+.image-data .g-value {
+    -fx-text-fill: #00FF00;
+}
+
+.image-data .b-value {
+    -fx-text-fill: #0000FF;
+}
+.boxlabel {
+    -fx-padding: 8;
+}
+
+.combo-box > .list-cell {
+    -fx-text-fill: -font-color-text;
+    -fx-border-width: 0;
+    -fx-border-color: -border-color;
+    -fx-background-color: -shadow-color-1, -shadow-color-2, -background-color-1, -background-color-2;
+    -fx-background-insets: 0 0 0 0, 1 0 1 1, 2 0 2 2, 3 0 3 3;
+    -fx-background-radius: 0, 0, 1, 1;
+    
+    -fx-padding: 8;
+}
+.combo-box-base > .arrow-button {
+    -fx-border-width: 0;
+    -fx-border-color: -border-color;
+    -fx-background-color: -shadow-color-1, -shadow-color-2, -background-color-1, -background-color-2;
+    -fx-background-insets: 0 0 0 0, 1 1 1 0, 2 2 2 0, 3 3 3 1;
+    -fx-background-radius: 0, 0, 1, 1;
+    
+    -fx-padding: 8;
+}

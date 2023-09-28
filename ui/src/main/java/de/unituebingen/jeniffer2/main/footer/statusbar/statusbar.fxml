@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.ToolBar?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.HBox?>
+<ToolBar xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1"
+         fx:controller="de.unituebingen.jeniffer2.main.footer.statusbar.StatusBarPresenter" styleClass="status-bar">
+    <items>
+        <Pane managed="false">
+            <Label text="-" fx:id="progressValue" prefWidth="30" minWidth="30" maxWidth="30" alignment="CENTER"/>
+        </Pane>
+        <HBox translateX="30">
+            <ProgressBar progress="0.5" prefWidth="300" fx:id="progressBar"/>
+            <Label text="Ready ..." fx:id="progressDescription"/>
+        </HBox>
+    </items>
+</ToolBar>

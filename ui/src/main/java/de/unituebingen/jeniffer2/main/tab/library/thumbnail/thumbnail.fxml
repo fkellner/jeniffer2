@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.VBox?>
+
+<Button fx:id="button" alignment="CENTER" contentDisplay="CENTER" graphicTextGap="0.0" mnemonicParsing="false" styleClass="thumbnail" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.unituebingen.jeniffer2.main.tab.library.thumbnail.ThumbnailPresenter" >
+    <graphic>
+        <VBox alignment="CENTER">
+            <children>
+                <ImageView fx:id="imageView" fitHeight="128" pickOnBounds="true" preserveRatio="true" />
+                <Label fx:id="fileName" alignment="CENTER" contentDisplay="CENTER"/>
+            </children>
+        </VBox>
+    </graphic>
+</Button>

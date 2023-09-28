@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<ToolBar xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.1" styleClass="workspace-information-bar"
+         fx:controller="de.unituebingen.jeniffer2.main.tab.editor.workspace.informationbar.InformationBarPresenter">
+    <items>
+        <Pane HBox.hgrow="ALWAYS"/>
+        <!--
+        <Label text="Label"/>
+        <Separator orientation="VERTICAL" styleClass="separator"/>
+        -->
+        <Label fx:id="fileName"/>
+        <Pane HBox.hgrow="ALWAYS"/>
+    </items>
+</ToolBar>

@@ -1,0 +1,38 @@
+.status-bar {
+    -fx-border-width: 0;
+    -fx-border-color: -border-color;
+    -fx-background-color: -shadow-color-1, -shadow-color-2, -background-color-1, -background-color-2;
+    -fx-background-insets: 0 0 0 0, 1 1 1 1, 2 2 2 2, 3 3 3 3;
+    -fx-background-radius: 0, 0, 1, 1;
+    -fx-padding: 8;
+}
+
+.status-bar .label {
+    -fx-text-fill: -font-color-text;
+}
+
+.progress-bar {
+    -fx-indeterminate-bar-length: 32;
+    -fx-indeterminate-bar-escape: true;
+    -fx-indeterminate-bar-flip: true;
+    -fx-indeterminate-bar-animation-time: 2;
+}
+
+.progress-bar > .bar {
+    -fx-background-color: linear-gradient(to bottom, derive(-fx-accent, -7%), derive(-fx-accent, 0%), derive(-fx-accent, -3%), derive(-fx-accent, -9%));
+    -fx-background-insets: 0;
+    -fx-background-radius: 1;
+}
+
+.progress-bar:indeterminate > .bar {
+    /*-fx-background-color: linear-gradient(to left, transparent, #B4A069);*/
+    -fx-background-color: -accent-color;
+}
+
+.progress-bar > .track {
+    -fx-background-color: derive(-font-color, -15%);
+    -fx-background-insets: 0;
+    -fx-background-radius: 1; /* 10, 9, 8 */
+    -fx-border-radius: 1;
+    -fx-padding: 0;
+}
