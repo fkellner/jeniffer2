@@ -6,7 +6,7 @@
 # separate terms of service, privacy policy, and support
 # documentation.
 
-name: Build JARs with Maven
+name: Build and publish JARs with Maven
 
 on:
   push:
@@ -33,3 +33,17 @@ jobs:
       run: cd cli && mvn package && cd ..
     - name: Compile and package GUI
       run: cd ui && mvn package
+    - name: rename CLI jar
+      run: cp cli/target/Jeniffer2-*-jar-with-dependencies.jar jeniffer2-cli.jar
+    - name: rename GUI jar
+      run: cp ui/target/Jeniffer2-*-jar-with-dependencies.jar jeniffer2.jar
+    - name: Publish compiled version as development version
+      uses: "marvinpinto/action-automatic-releases@latest"
+      with:
+	repo_token: "${{ secrets.GITHUB_TOKEN }}"
+	automatic_release_tag: "latest"
+	prerelease: true
+	title: "Latest Versions"
+	files: |
+	  jeniffer2-cli.jar
+	  jeniffer2.jar
