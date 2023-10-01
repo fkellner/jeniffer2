@@ -2,6 +2,8 @@
 
 ![Jeniffer2 Logo](jeniffer2-logo.png)
 
+![Build and publish JARs with Maven](https://github.com/fkellner/jeniffer2/actions/workflows/maven.yml/badge.svg)](https://github.com/fkellner/jeniffer2/actions/workflows/maven.yml)
+
 Jeniffer2 is a raw image processor written in Java. More Details can be found in the `USER_MANUAL.{pdf,md}`.
 
 ## Legal notice
