@@ -38,6 +38,7 @@ jobs:
     - name: rename GUI jar
       run: cp ui/target/Jeniffer2-*-jar-with-dependencies.jar jeniffer2.jar
     - name: Publish compiled version as development version
+      if: ${{ github.event_name == 'push' }}
       uses: "marvinpinto/action-automatic-releases@latest"
       with:
         repo_token: "${{ secrets.GITHUB_TOKEN }}"
