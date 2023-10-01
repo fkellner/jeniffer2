@@ -40,10 +40,10 @@ jobs:
     - name: Publish compiled version as development version
       uses: "marvinpinto/action-automatic-releases@latest"
       with:
-	repo_token: "${{ secrets.GITHUB_TOKEN }}"
-	automatic_release_tag: "latest"
-	prerelease: true
-	title: "Latest Versions"
-	files: |
-	  jeniffer2-cli.jar
-	  jeniffer2.jar
+        repo_token: "${{ secrets.GITHUB_TOKEN }}"
+        automatic_release_tag: "latest"
+        prerelease: true
+        title: "Latest Versions"
+        files: |
+          jeniffer2-cli.jar
+          jeniffer2.jar
