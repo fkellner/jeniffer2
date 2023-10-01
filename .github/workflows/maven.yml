@@ -28,7 +28,7 @@ jobs:
         distribution: 'temurin'
         cache: maven
     - name: Build and test DNG Processor
-      run: cd dng && mvn install && cd ..
+      run: cd dng && mvn install '-Dtest=!de.unituebingen.opengl.**' && cd ..
     - name: Compile and package CLI
       run: cd cli && mvn package && cd ..
     - name: Compile and package GUI

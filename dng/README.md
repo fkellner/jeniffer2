@@ -27,6 +27,16 @@ We currently depend on:
 
 Code Formatter settings are in `eclipse-formatter.xml`. If you start VSCode in this folder, it should pick up the settings in `.vscode` automatically.
 
+## Installing without a compatible graphics card
+
+This Package contains some tests that depend on an OpenGL-compatible Graphics Card to be present.
+However, DNG processing also works without a Graphics Card. In order to compile this module on 
+a system without an OpenGL-compatible Graphics Card, you can exclude the corresponding tests 
+with:
+```sh
+mvn install '-Dtest=!de.unituebingen.opengl.**'
+```
+
 ## Testing
 
 In order to just execute one specific test, run
