@@ -4,12 +4,22 @@
 
 ![Build Status](https://github.com/fkellner/jeniffer2/actions/workflows/publish.yml/badge.svg) ![OpenJDK 17](https://badgen.net/static/OpenJDK/17/green?icon=github) ![License: GPLv3](https://badgen.net/static/License/GPLv3/green?icon=github)
 
-Jeniffer2 is a raw image processor written in Java. More Details can be found in the `USER_MANUAL.{pdf,md}`.
+Jeniffer2 is a raw image processor written in Java. It offers
+- a big choice of demosaicing algorithms
+- the option to export to TIFF, JPEG or PNG
+- tools to inspect metadata
+- tools for comparing the results of different algorithms
 
-## Legal notice
+It has been designed to be extensible (at least regarding demosaicing algorithms)
+and portable. 
 
-* This product includes DNG technology under license by Adobe.
-* Dieses Produkt enthält die bei Adobe lizenzierte DNG-Technologie.
+_Fun fact: JENIFFER stands for **J**ava **E**nhanced **N**ef **I**mage **F**ile **F**ormat **E**dito**R**. Version 2 is using the Adobe licensed open DNG format as input instead of the proprietary Nikon NEF format._
+
+## Installing and Running Jeniffer2
+
+- [User Manual (PDF, en)](https://github.com/fkellner/jeniffer2/releases/download/latest/USER_MANUAL.pdf)
+- [User Manual (PDF, de)](https://github.com/fkellner/jeniffer2/releases/download/latest/USER_MANUAL.de.pdf)
+- [Pre-Compiled JARs of GUI and CLI, and experimental stand-alone binaries](https://github.com/fkellner/jeniffer2/releases/tag/latest)
 
 ## Subprojects
 
@@ -24,6 +34,11 @@ CLI frontend for the library, for manual testing.
 ### `/ui`
 
 Distributable GUI frontend. 
+
+### `benchmark-accuracy`, `benchmark-performance`
+
+Shell-Scripts using the CLI and some example images to test the accuracy of the different algorithms
+and the performance of their implementation, and generate some plots from the collected data.
 
 ## Build instructions
 
@@ -41,7 +56,7 @@ _Tip: On Debian-based Linux systems, you can install a specific java version via
 For your convenience, you can build the project using `make build` if you have CMake or something similar installed.
 
 You need to have it installed in order to run the (hopefully) platform-independent cross-platform
-package script with `make package`, which uses the great [`warp-packer](https://github.com/fintermobilityas/warp#quickstart-with-java) to produce standalone binaries (`*.bin` and `*.exe`). A helper for this are the `run-<os>.sh` and `run.bat` files.
+package script with `make package`, which uses the great [`warp-packer`](https://github.com/fintermobilityas/warp#quickstart-with-java) to produce standalone binaries (`*.bin` and `*.exe`). A helper for this are the `run-<os>.sh` and `run.bat` files.
 
 For the windows binary, it may happen that unpacking the archive fails. Then you need to manually go to `C -> Users -> <Username> -> AppData -> Local` (hidden folder, setting to show hidden files can be found in the "View" Tab in the "Show/Hide" section in your explorer) and delete the `warp` folder.
 
@@ -88,3 +103,31 @@ Alternatively, if you have Make available, you can simply run
 ```sh
 make manual
 ```
+
+## Contributing
+
+Feel free to open an issue or pull request! There is currently one
+single maintainer to this project, so you may expect a response time
+of several days. 
+
+This project is probably too small for a formal 
+code of conduct, but please be civil to each other and do not discriminate based
+on race, sexuality, gender or anything else. 
+
+## Credits
+
+Jeniffer2 has been developed under the supervision of Prof. Thomas Walter at Tübingen University.
+
+Credits go to:
+
+- Eugen Ljavin (who wrote the DNG processing and original AfterburnerFX/JavaFX app)
+- Joachim Groß
+- Michael Kessler
+- Claudia Grosch
+- Andreas Reiter (who added the more advanced demosaicing algorithms)
+- Florian Kellner (who added comparison tools, experimental GPU support and maintains this repo)
+
+# Legal notice
+
+* This product includes DNG technology under license by Adobe.
+* Dieses Produkt enthält die bei Adobe lizenzierte DNG-Technologie.

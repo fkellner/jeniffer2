@@ -12,27 +12,27 @@ Version 2 benutzt stattdessen das Adobe-lizensierte DNG-Format mit offener Spezi
 
 Jeniffer2 is Open Source Software zur Entwicklung von DNG-Dateien zu TIFF,
 JPEG oder PNG und bietet eine große Auswahl an Demosaicing-Algorithmen.
+Es können außerdem Metadaten ausgelesen und die Ergebnisbilder verschiedener
+Algorithmen verglichen werden.
+
+JENIFFER2 ist Open Source Software, der Quellcode liegt auf [GitHub](https://github.com/fkellner/jeniffer2)!
 
 ## Systemvoraussetzungen
 
-### Standalone Binaries
+### Standalone Binaries (Experimentell)
 
-Momentan stellen wir 3 ausführbare Dateien zur Verfügung:
+Momentan stellen wir 4 ausführbare Dateien zur Verfügung:
 
 - `jeniffer2-linux-x64.bin` für Linux-Rechner mit Intel- oder AMD-Prozessoren
 - `jeniffer2-windows-x64.exe` für Windows-Rechner mit Intel- oder AMD-Prozessoren
 - `jeniffer2-mac-x64.bin` für Apple-Rechner mit Intel-Prozessoren
-
-Außerdem gibt es ein experimentelles Binary für Apple Silicon (Macs mit M1-Chip).
-
-Auf allen obigen Konfigurationen sollte auch die Jar-Distribution
-laufen, zusätzlich deckt sie noch einige ARM-Systeme ab.
+- `jeniffer2-mac-aarch64.bin` für Apple-Rechner mit  aarch64 (Apple Silicon) (experimentell, im Zweifelsfall muss JAR verwendet werden)
 
 _Für andere Distributionen oder 32-Bit-Systeme müssen Sie im Quellcode selbst die Plattform-Spezifischen Teile der Abhängigkeiten hinzufügen und Jeniffer2 selbst kompilieren._
 
-### Jar-Distribution
+### Jar-Distribution (Empfohlen)
 
-Jeniffer2 benötigt eine Java Laufzeitumgebung (JRE) der Version 17 oder höher.
+Die Jar-Distribution (`jeniffer2.jar`, `jeniffer2-cli.jar`) benötigt eine Java Laufzeitumgebung (JRE) der Version 17 oder höher.
 
 Sie können die Version ihrer aktuellen Java Laufzeitumgebung testen, indem sie
 ein Teminal (MacOS/Linux) oder eine Eingabeaufforderung (Windows) öffnen und
@@ -75,6 +75,11 @@ haben, öffnen, und den folgenden Befehl ausführen:
 java -jar jeniffer2.jar
 # auf MacOS
 java -XstartOnFirstThread -jar jeniffer2.jar
+```
+
+Für mehr Informationen zur CLI (Kommandozeilenversion), schauen Sie in die eingebaute Hilfe:
+```sh
+java -jar jeniffer2-cli.jar --help
 ```
 
 ### Die richtige Grafikkarte verwenden
@@ -124,8 +129,8 @@ Jeniffer2 erstellt einen Ordner namens `jeniffer2-logs` in dem Ordner, in dem es
 aufgerufen wird. Hier werden Systeminformationen und Ausführungszeiten einzelner
 Verarbeitungsschritte im CSV-Format gespeichert.
 Sie können diese Dateien gerne mit einem Text-Editor, Python, R, Excel usw. öffnen,
-wenn Sie neugierig sind, aber wenn Sie zur Forschung zur Entwicklung von Jeniffer2
-beitragen wollen, ändern Sie diese Dateien bitte nicht, bevor Sie sie abgeben.
+wenn Sie neugierig sind. Im [Code Repository](https://github.com/fkellner/jeniffer2) gibt es Skripte, die Performanz und Akkuratheit testen und
+Diagramme zeichnen!
 
 ## Danksagung
 
@@ -142,6 +147,9 @@ Credits gehen an:
 
 ## Quellcode
 
-Wir arbeiten gerade daran, den Quellcode von Jeniffer2 zu veröffentlichen.
-Bis dahin können Sie [Florian Kellner](mailto:mr.florian.kellner@posteo.de)
-kontaktieren, um eine Kopie des Quellcodes zu erhalten oder Feedback zu geben.
+Alle Rechte am Adobe DNG Standard gehören Adobe, Inc. 
+
+Der Quellcode von Jeniffer2 ist unter der GPLv3 lizensiert, 
+der volle Lizenztext sowie der Quellcode befinden sich im 
+[Code Repository](https://github.com/fkellner/jeniffer2).
+

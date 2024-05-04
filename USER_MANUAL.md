@@ -10,28 +10,27 @@ JENIFFER stands for **J**ava **E**nhanced **N**ef **I**mage **F**ile **F**ormat 
 Version 2 is using the Adobe licensed open DNG format as input instead of the proprietary Nikon NEF format.
 
 JENIFFER2 is Open Source Software for developing DNG files to TIFF, JPEG or PNG,
-offering a big choice of demosaicing algorithms.
+offering a big choice of demosaicing algorithms. It also offers tools to inspect
+metadata and compare the results of different algorithms.
+
+Jeniffer2 is Open Source Software, you can check out the code on [GitHub](https://github.com/fkellner/jeniffer2)!
 
 ## Prerequisites
 
-### Pre-Packaged Binaries
+### Pre-Packaged Binaries (Experimental)
 
-We currently provide 3 binaries:
+We currently provide 4 binaries:
 
 - `jeniffer2-linux-x64.bin` for Linux Systems with Intel or AMD processors
 - `jeniffer2-windows-x64.exe` for Windows Systems with Intel or AMD processors
 - `jeniffer2-mac-x64.bin` for MacOS Systems with Intel processors
-
-And an experimental binary for when you are on a mac with aarch64 (Apple Silicon/M1 chips).
-
-If you are on an ARM architecture or a mac with aarch64 (Apple Silicon/M1) you
-need to use the Jar distribution.
+- `jeniffer2-mac-aarch64.bin` for MacOS Systems with aarch64 (Apple Silicon) (experimental, may need to use JAR distribution instead)
 
 _If you are on an entirely different OS or use 32bit-Architecture, you need the source code to add some native libraries and compile Jeniffer2 yourself._
 
-### Jar Distribution
+### Jar Distribution (Recommended)
 
-JENIFFER requires you to have a Java Runtime Environment (JRE) of Version 17 or
+The Jar distributions(`jeniffer2.jar`, `jeniffer2-cli.jar`) require you to have a Java Runtime Environment (JRE) of Version 17 or
 higher installed.
 
 You can check the version of your installed JRE by opening a command prompt
@@ -62,15 +61,20 @@ You can simply double-click the executable to run it (_on MacOS/Linux, you may n
 **Known Issues:**
 - If running on Windows fails with an Error like `Error: Custom ( kind: Other, error: StringError("no tarball found inside binary") )`, going to `C -> Users -> <Username> -> AppData -> Local` (hidden folder, setting to show hidden files can be found in the "View" Tab in the "Show/Hide" section in your explorer) and deleting the `warp` folder may help, then you can retry.
 
-### Jar Distribution
+### Jar Distributions
 
-Tu run the Java Archive, open a terminal/command prompt
+To run the Java Archive, open a terminal/command prompt
 in the folder where you saved it and run
 ```sh
 # on linux and windows
 java -jar jeniffer2.jar
 # on MacOS
 java -XstartOnFirstThread -jar jeniffer2.jar
+```
+
+For more information on the CLI (command line) version, run
+```sh
+java -jar jeniffer2-cli.jar --help
 ```
 
 ### Using the right graphics card
@@ -106,9 +110,9 @@ when you open the program again.
 
 Jeniffer2 creates a `jeniffer2-logs` folder in the folder it is run in. It stores
 performance and system information in CSV format. You can open and inspect these
-files with a text editor, python, R, Excel...if you are curious, but if you want
-to contribute to the research concerning Jeniffer2 development, please do not edit
-them before handing them in.
+files with a text editor, python, R, Excel...if you are curious. 
+In the [Code Repository](https://github.com/fkellner/jeniffer2), there are some
+scripts to benchmark performance and accuracy and generate plots!
 
 ## Credits
 
@@ -123,8 +127,12 @@ Credits go to:
 - Andreas Reiter
 - Florian Kellner
 
-## Source Code
+## Source Code and License
 
-We are currently working on making the source code of Jeniffer2 public.
-In the meantime, you can contact [Florian Kellner](mailto:mr.florian.kellner@posteo.de)
-for the source code or with any issues you might have.
+The Adobe DNG Standard is developed and owned by Adobe, Inc.
+
+Jeniffer2 is Licensed under GPLv3, details about this license 
+as well as the source code can be found in the
+[Code Repository](https://github.com/fkellner/jeniffer2).
+
+
