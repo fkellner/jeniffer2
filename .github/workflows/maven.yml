@@ -45,6 +45,8 @@ jobs:
       uses: docker://pandoc/latex:3
       with:
           args: "-f markdown -t latex -V linkcolor:lightblue -o USER_MANUAL.de.pdf USER_MANUAL.de.md"
+    - name: Package with JRE
+      run: make package
     - name: Publish compiled version as development version
       if: ${{ github.event_name == 'push' }}
       uses: "marvinpinto/action-automatic-releases@latest"
@@ -60,3 +62,7 @@ jobs:
           USER_MANUAL.md
           USER_MANUAL.de.pdf
           USER_MANUAL.de.md
+          dist/jeniffer2-linux-x64.bin
+          dist/jeniffer2-windows-x64.exe
+          dist/jeniffer2-mac-x64.bin
+          dist/jeniffer2-mac-aarch64.bin
