@@ -37,6 +37,14 @@ jobs:
       run: cp cli/target/Jeniffer2-*-jar-with-dependencies.jar jeniffer2-cli.jar
     - name: rename GUI jar
       run: cp ui/target/Jeniffer2-*-jar-with-dependencies.jar jeniffer2.jar
+    - name: Render Documentation PDFs (en)
+      uses: docker://pandoc/latex:3
+      with:
+          args: "-f markdown -t latex -V linkcolor:lightblue -o USER_MANUAL.pdf USER_MANUAL.md"
+    - name: Render Documentation PDFs (en)
+      uses: docker://pandoc/latex:3
+      with:
+          args: "-f markdown -t latex -V linkcolor:lightblue -o USER_MANUAL.de.pdf USER_MANUAL.de.md"
     - name: Publish compiled version as development version
       if: ${{ github.event_name == 'push' }}
       uses: "marvinpinto/action-automatic-releases@latest"
@@ -48,3 +56,7 @@ jobs:
         files: |
           jeniffer2-cli.jar
           jeniffer2.jar
+          USER_MANUAL.pdf
+          USER_MANUAL.md
+          USER_MANUAL.de.pdf
+          USER_MANUAL.de.md

@@ -108,3 +108,7 @@ warp-packer
 *.bin
 *.exe
 dist/
+
+# rendered user manuals
+USER_MANUAL.de.pdf
+USER_MANUAL.pdf
