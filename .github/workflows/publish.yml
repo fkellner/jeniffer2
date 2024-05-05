@@ -6,12 +6,10 @@
 # separate terms of service, privacy policy, and support
 # documentation.
 
-name: Build and publish JARs with Maven
+name: Build and publish JARs with Maven, standalone with warp and docs with pandoc
 
 on:
   push:
-    branches: [ "main" ]
-  pull_request:
     branches: [ "main" ]
 
 jobs:
