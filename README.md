@@ -26,7 +26,7 @@ _Fun fact: JENIFFER stands for **J**ava **E**nhanced **N**ef **I**mage **F**ile 
 
 ## Demo
 
-![Jeniffer2 algorithm comparison demo](Jeniffer2-demo.mp4)
+![Jeniffer2 algorithm comparison demo](https://github.com/fkellner/jeniffer2/assets/28141677/6ac3e28f-5cbc-45ce-aace-a1028ac1d249)
 
 # Development
 
