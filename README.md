@@ -24,6 +24,12 @@ _Fun fact: JENIFFER stands for **J**ava **E**nhanced **N**ef **I**mage **F**ile 
 - [User Manual (PDF, de)](https://github.com/fkellner/jeniffer2/releases/download/latest/USER_MANUAL.de.pdf)
 - [Pre-Compiled JARs of GUI and CLI, and experimental stand-alone binaries](https://github.com/fkellner/jeniffer2/releases/tag/latest)
 
+## Demo
+
+![Jeniffer2 algorithm comparison demo](Jeniffer2-demo.mp4)
+
+# Development
+
 ## Subprojects
 
 ### `/dng`
@@ -117,7 +123,7 @@ This project is probably too small for a formal
 code of conduct, but please be civil to each other and do not discriminate based
 on race, sexuality, gender or anything else. 
 
-## Credits
+# Credits
 
 Jeniffer2 has been developed under the supervision of [Prof. Dr. Thomas Walter](https://uni-tuebingen.de/fakultaeten/mathematisch-naturwissenschaftliche-fakultaet/fachbereiche/informatik/lehrstuehle/informationsdienste/team/thomas-walter/) at Tübingen University.
 
