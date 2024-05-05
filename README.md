@@ -13,6 +13,9 @@ Jeniffer2 is a raw image processor written in Java. It offers
 It has been designed to be extensible (at least regarding demosaicing algorithms)
 and portable. 
 
+Jeniffer2 has been developed as part of three master theses at 
+Tübingen University, which can be downloaded [here](https://github.com/fkellner/jeniffer2-theses).
+
 _Fun fact: JENIFFER stands for **J**ava **E**nhanced **N**ef **I**mage **F**ile **F**ormat **E**dito**R**. Version 2 is using the Adobe licensed open DNG format as input instead of the proprietary Nikon NEF format._
 
 ## Installing and Running Jeniffer2
@@ -116,7 +119,7 @@ on race, sexuality, gender or anything else.
 
 ## Credits
 
-Jeniffer2 has been developed under the supervision of Prof. Thomas Walter at Tübingen University.
+Jeniffer2 has been developed under the supervision of [Prof. Dr. Thomas Walter](https://uni-tuebingen.de/fakultaeten/mathematisch-naturwissenschaftliche-fakultaet/fachbereiche/informatik/lehrstuehle/informationsdienste/team/thomas-walter/) at Tübingen University.
 
 Credits go to:
 
@@ -125,7 +128,7 @@ Credits go to:
 - Michael Kessler
 - Claudia Grosch
 - Andreas Reiter (who added the more advanced demosaicing algorithms)
-- Florian Kellner (who added comparison tools, experimental GPU support and maintains this repo)
+- [Florian Kellner](https://github.com/fkellner) (who added comparison tools, experimental GPU support and maintains this repo)
 
 # Legal notice
 
