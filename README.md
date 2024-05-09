@@ -134,7 +134,7 @@ Credits go to:
 - Michael Kessler
 - Claudia Grosch
 - Andreas Reiter (who added the more advanced demosaicing algorithms)
-- [Florian Kellner](https://github.com/fkellner) (who added comparison tools, experimental GPU support and maintains this repo)
+- [Florian Kellner](https://github.com/fkellner) (who refactored the code, added comparison tools, experimental GPU support and setup+maintains this repo)
 
 # Legal notice
 
